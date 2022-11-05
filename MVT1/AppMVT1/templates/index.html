@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Listado de familiares</h1><hr>
+    <h4>
+      <ol>
+        {% for familiar in datos %}
+        <li>
+          Nombre: {{familiar.nombre}} <br>
+          Edad: {{familiar.edad}} años <br>
+          Nacimiento: {{familiar.nacimiento}} <br><br>
+        </li>
+        {% endfor %}
+      </ol>
+    </h4>
+  </body>
+</html>
